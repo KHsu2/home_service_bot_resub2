@@ -1,6 +1,16 @@
 # home_service_bot_resub2
 Resubmission for Udacity's Home Service Bot Project
 
-Final Project for Udacity's Robotics Nanodegree that simulates a robot operating on ROS to find an object and deliver it to a goal. The following ROS packages were used: turtlebot, turtlebot_interactions, turtlebot_simulations, and slam_gmapping.
+Final Project for Udacity's Robotics Nanodegree that simulates a robot operating on ROS to find an object and deliver it to a goal
 
-The pipeline followed by the robot was to use the Gmapping package to create a local map of its environment, then the Adaptive Monte Carlo Localization package to localize in the map. The Move Base Package is then used which creates a costmap of the local map from which the optimal path is calculated and used to move the robot to its goal.
+## Shell Scripts
+The shell scripts are accessed by the following command
+`./<catkin_dir>/src/scripts/<shell name>.sh`
+
+### test_slam.sh
+o	This script utilizes the gmapping package which uses a robot’s laser sensor and pose data to map its environment while being navigated by the user. 
+o	Gmapping uses Rao-Blackwellized particle filters in which each particle contains its own map of the environment which learns a grid map. 
+
+### test_navigation.sh
+
+### home_service.sh
